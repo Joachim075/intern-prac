@@ -1,0 +1,151 @@
+img{
+    height: 170px;
+    min-width: 350px;
+    border-radius: 5%;
+    
+}
+.main{
+background: url(painting-mountain-lake-with-mountain-background.jpg) no-repeat;
+background-size: cover;
+height: calc(100vh-80px);
+padding-top: 30px;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-evenly;
+gap: 2rem;
+margin-bottom: 30px;
+margin-top: 30px;
+}
+.sub{
+background-color: white;
+min-width: 350px;
+height: 300px;
+border-radius: 5%;
+border:1px rgb(255, 255, 255) outset ;
+display: flex;
+flex-flow: column wrap;
+justify-content: space-evenly;
+
+
+}
+.sub:hover{
+background-color: rgb(244, 245, 250);    
+border:2px solid rgb(204, 204, 217);    
+min-width: 360px;
+height: 310px;
+}
+#check{
+    display: none;
+}
+
+a.active, a:hover{
+    color: teal;
+    text-decoration: underline yellow;
+    transition: .5s;
+}
+.logo{
+    border-radius: 10%;
+    height: 155px;
+    width: 55px;
+    margin: 0%;
+    float: left;
+}
+.navbar{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    min-height: 100px;
+}
+.nav{
+    float: right;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-width: 350px;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+button{
+    margin: 5px;
+    background-color: rgb(21, 20, 21);
+    border: 0px outset;
+    color: white;
+    border-radius: 15%;
+}
+.detail{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.839);
+    border-radius: 5%;
+    
+
+}
+.unit{
+    margin:1% ;
+    border:2px rgb(255, 255, 255) solid;
+}
+
+body{
+    background: url(4444.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 958px) {
+    .logo{
+        height: 52px;
+        width: 100%
+    }
+    a{
+        font-size: 16px;
+    }
+    
+     
+}
+.btn{
+    color: rgb(234, 242, 248);
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    display: non;
+    cursor: pointer;
+}
+@media (max-width:858px) {
+    .btn{
+        display: block;
+        color: rgb(251, 250, 250);
+        margin: 20px;
+        cursor: pointer;
+     }
+     .logo{
+        display: none;
+     }
+        .nav{
+            position: fixed;
+            top: 80px;
+            display: flex;
+            font-size: 16px;
+            flex-flow: column;
+            text-transform: uppercase;
+            text-align: center;
+            position: fixed;
+            width: 50%;
+            left: 100%;
+            height: 50vh;
+            background-color: #2c3e50;
+        }
+        .check:checked ~ .nav{
+            left: 0%;
+        }
+      
+}
